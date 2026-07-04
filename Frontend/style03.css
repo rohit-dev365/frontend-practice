@@ -1,0 +1,53 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,
+body{
+height: 100%;
+width: 100%;
+}
+
+
+h1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 100px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: rotateZ(30deg);
+    
+}
+
+
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(5, 5, 62);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.child1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.child2{
+    height: 100px;
+    width: 100px;
+
+    background-color: rgb(255, 0, 153);
+}
+
+.child3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 238);
+}
+
