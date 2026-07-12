@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "helvetica neue";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(247, 245, 216);
+  /* padding: 20px; */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  /* background-color: white; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header .left h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  padding-left: 20px;
+  display: flex;
+}
+
+header .center {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+header .center h3 {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header .right input {
+  padding-right: 60px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+  border: 2px solid wheat;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+.bottom {
+  position: relative;
+  height: calc(100% - 80px);
+  width: 100%;
+  /* background-color:white; */
+  display: flex;
+}
+
+.bottom .bottom-content {
+  padding: 10px;
+  margin-left: 30px;
+}
+.bottom .bottom-content h5 {
+  font-family: monospace;
+  border: 1px solid rgb(50, 44, 44);
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 50px;
+  color: green;
+  font-size: 15px;
+  background-color: rgb(202, 239, 202);
+}
+.bottom .bottom-content h1 {
+  font-size: 50px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  line-height: 60px;
+  margin-top: 20px;
+}
+.bottom .bottom-content h1 span {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  color: green;
+}
+
+.bottom .bottom-content h6 {
+  font-family: cursive;
+  font-size: 12px;
+  color: rgb(142, 141, 141);
+  word-spacing: 2px;
+  margin-top: 10px;
+}
+
+.bottom .bottom-content button {
+  background-color: rgb(38, 36, 36);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  margin-top: 20px;
+}
+.bottom .bottom-content span.cart {
+  border: 2px solid rgb(174, 172, 172);
+  padding: 10px 20px;
+  border-radius: 50px;
+  word-spacing: 10px;
+  background-color: white;
+  color: rgb(90, 87, 87);
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.bottom .bottom-content .h4 {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.bottom .bottom-content h4 {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+.bottom .bottom-content h4 span {
+  font-family: cursive;
+  margin-left: 21px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(134, 127, 127);
+}
+
+.bottom .bottom-content-right {
+  height: 55%;
+  width: 330px;
+  position: absolute;
+  right: 0;
+}
+
+.bottom .bottom-content-right .c1 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: green;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.bottom .bottom-content-right .c2 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: red;
+  margin-bottom: 25px;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.bottom .bottom-content-right .c3 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: rgb(231, 191, 31);
+  margin-bottom: 25px;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.bottom .bottom-content-right .c1-con {
+  position: absolute;
+  top: 40px;
+  left: 30%;
+}
+.bottom .bottom-content-right .c1-con h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+.bottom .bottom-content-right .c1-con P{
+  font-family: cursive;
+  color: rgb(145, 140, 140);
+  font-size: 13px;
+
+}
+
+
+.bottom .bottom-content-right .c2-con {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+
+.bottom .bottom-content-right .c2-con h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+.bottom .bottom-content-right .c2-con P{
+  font-family: cursive;
+  color: rgb(145, 140, 140);
+  font-size: 13px;
+
+}
+
+.bottom .bottom-content-right .c3-con {
+  position: absolute;
+  top: 77%;
+  left: 30%;
+}
+.bottom .bottom-content-right .c3-con h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  
+}
+.bottom .bottom-content-right .c3-con P{
+  font-family: cursive;
+  color: rgb(145, 140, 140);
+  font-size: 13px;
+}
+
+.bottom .circle {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: rgba(244, 244, 247, 0.453);
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  box-shadow: 0 10px 25px rgba(214, 210, 210, 0.3);
+  object-fit: cover;
+}
+
+.bottom .circle .image {
+  position: relative;
+  z-index: 99;
+  height: 90%;
+  width: 100%;
+  transform: rotate(-20deg);
+  bottom: 20px;
+  box-shadow: transparent rgba(0, 0, 0, 0.3);
+}
+
+.bottom-div {
+  position: absolute;
+  height: calc(50% - 80px);
+  width: calc(100% - 40px);
+  background-color: rgb(18, 79, 58);
+  padding: 20px;
+  margin: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  display: flex;
+  gap: 40px;
+
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.bottom-div .left-content {
+  height: 100%;
+  width: 15%;
+  /* background-color: white; */
+}
+
+.bottom-div .left-div {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  border-radius: 20px;
+}
+.bottom-div .left-div img {
+  position: absolute;
+  height: 115%;
+  top: -20px;
+  left: 0px;
+}
+
+.bottom-div .center-div {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  border-radius: 20px;
+}
+.bottom-div .center-div img {
+  position: absolute;
+  height: 115%;
+  top: -20px;
+  left: 0px;
+}
+
+.bottom-div .right-div {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  border-radius: 20px;
+}
+.bottom-div .right-div img {
+  position: absolute;
+  height: 115%;
+  top: -20px;
+  left: 0px;
+}
+
+.bottom-div .left-content h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+}
+
+.bottom-div .left-content .c1 {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 20px;
+}
+.bottom-div .left-content .c1 svg {
+  padding: 20px;
+  color: rgb(118, 114, 114);
+}
+
+.bottom-div .left-content .c2 {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 120px;
+}
+.bottom-div .left-content .c2 svg {
+  padding: 20px;
+  color: rgb(12, 67, 145);
+}
+
+.left-div .info-left {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  /* background-color: aquamarine; */
+  left: 50%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.left-div .info-left h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 10px;
+}
+.left-div .info-left h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.left-div .info-left .order-left {
+  height: 40px;
+  width: 150px;
+  background-color: crimson;
+  border-radius: 50px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.center-div .info-center {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  /* background-color: aquamarine; */
+  left: 50%;
+  padding: 20px;
+  border-radius: 20px;
+}
+.center-div .info-center .order-center {
+  height: 40px;
+  width: 150px;
+  background-color: crimson;
+  border-radius: 50px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.center-div .info-center h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 10px;
+}
+.center-div .info-center h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.right-div .info-right {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  /* background-color: aquamarine; */
+  left: 50%;
+  padding: 20px;
+  border-radius: 20px;
+}
+.right-div .info-right .order-right {
+  height: 40px;
+  width: 150px;
+  background-color: crimson;
+  border-radius: 50px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.right-div .info-right h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 10px;
+}
+.right-div .info-right h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 10px;
+}
